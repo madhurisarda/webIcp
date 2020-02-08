@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Rock, Paper, or Scissors</title>
+</head>
+<body bgcolor="#808080">
+<center>Enter Your Input Below!!  </br></br>
+    <input type="text" name="Input" id="userinput"></br></br>
+    <input type="button" value="Start Game" onclick="playGame()">
+</center>
+<script>
+    function getComputerChoice() {
+        switch(Math.floor(Math.random()*3)) {
+            case 0:
+                return 'rock';
+                break;
+            case 1:
+                return 'scissors';
+                break;
+            case 2:
+                return 'paper';
+                break;
+        };
+    }
+    function determineWinner(userChoice,computerChoice) {
+        if (userChoice === computerChoice) {
+            return 'It\'s a tie!';
+        } else if (userChoice === 'rock') {
+            if (computerChoice === 'paper') {
+                return 'Computer wins!';
+            } else {
+                return 'You win!';
+            }
+
+        } else if (userChoice === 'paper'){
+            if (compterChoice === 'scissors') {
+                return 'Computer wins!';
+            }else {
+                return 'You win!';
+            }
+        } else if (userChoice === 'scissors') {
+            if (computerChoice === 'rock') {
+                return 'Computer wins!';
+            } else {
+                return 'You win!';
+            }
+        } else if (userChoice === 'bomb') {
+            return 'You win!';
+        }
+    }
+
+
+    function playGame() {
+        let userInput1=document.getElementById("userinput").value;
+        console.log(userInput1);
+        let userChoice = userInput1;
+        let computerChoice = getComputerChoice();
+        console.log("You Threw "+" " + userChoice);
+        console.log("Computer threw "+ computerChoice);
+        window.alert("Computer threw "+ computerChoice);
+        window.alert(determineWinner(userChoice,computerChoice));
+    };
+</script>
+</body>
+</html>
