@@ -1,0 +1,57 @@
+body{
+  padding: 0;
+  margin: 0;
+
+}
+form{
+  max-width: 50em;
+  margin: 4em auto;
+  position: relative;
+  background: #f4f4f4;
+  padding: 2em 3em;
+  overflow: hidden;
+}
+form h1{
+  font-family: "Raleway";
+  color: darkred;
+}
+form input[type=text]::placeholder{
+  font-family: "Raleway";
+  color:#666;
+}
+form .data{
+  margin-top: 1em;
+}
+form .data li{
+  background: #fff;
+  border-left: 4px solid darkred;
+  padding: 1em;
+  margin: 1em auto;
+  color: #666;
+  font-family: "Raleway";
+}
+form .data li i{
+  float: right;
+  color: #888;
+  cursor: pointer;
+}
+form .input-group-text{
+  background: darkred;
+  width: 45px;
+  height: 5px;
+  padding: 23px;
+  color: #fff;
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+}
+form .input-group-text i{
+  font-size: 2em;
+}
+form .form-control{
+  height: 45px;
+  font-family: "Raleway";
+}
+form .form-control:focus {
+  box-shadow: 0;
+}

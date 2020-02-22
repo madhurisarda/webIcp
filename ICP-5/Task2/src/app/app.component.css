@@ -1,0 +1,35 @@
+.maindisplay {
+  background: lightgrey;
+  height: calc(200% / 3);
+  padding: 5% !important;
+  font-size: 4rem;
+  text-align: right;
+  font-family: Courier, monospace;
+  overflow: auto;
+}
+.subdisplay {
+  border-bottom: 1px solid black;
+  height: 45%;
+  font-size: 2rem;
+  overflow: auto;
+}
+td,th {
+  padding: 7px;
+}
+.keypad {
+  height: calc(300% / 3);
+}
+.keys {
+  margin: 5px;
+  width: 25%;
+  height: 20%;
+  background: whitesmoke;
+  color: black;
+  padding-right: 150px;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.one-line {
+  display: inline-block;
+}
