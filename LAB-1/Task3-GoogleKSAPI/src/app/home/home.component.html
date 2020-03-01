@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="left-box">
+  <form class="form-horizontal" [formGroup]="searchAPIForm" (ngSubmit)="getSearchResults()">
+    <table class="table">
+      <tr>
+        <td>
+          <div class="form-group col-md-8 is-invalid " [ngClass]="{'has-error': searchAPIForm.controls.search.errors }">
+            <label for="search">Search Keyword</label>
+            <input id="search" type="text" class="form-control is-invalid " formControlName="search" placeholder="Taylor Swift">
+            <app-control-messages [control]="searchAPIForm.controls.search" class="invalid-feedback"></app-control-messages>
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <br>
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </td>
+        <td>
+      </tr>
+    </table>
+  </form>
+  </div>
+</div>
+<br>
+
+<div class="display_search_results">
+  <app-search-api [results]="searchResults"></app-search-api>
+</div>

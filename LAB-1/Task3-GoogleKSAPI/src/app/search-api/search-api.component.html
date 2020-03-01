@@ -1,0 +1,37 @@
+<div class="card container">
+
+  <div class="card-header" style="text-align: center;">
+    <b> Search results </b>
+  </div>
+
+  <div class="card-body">
+      <div *ngFor="let resultsEle of results.itemListElement; let i= index">
+        <div class="row">
+          <div class="card col-md-12" *ngIf="i<2">
+            <div class="card-header"><b>{{results.itemListElement[i].result.name}}</b></div>
+            <div class="card-body">
+              <table>
+                <tr >
+                  <td style="text-align: center;">Description </td>
+                  <td >-></td>
+                  <td class="description">{{results.itemListElement[i].result.description}}</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center;">Details Description </td>
+                  <td >-></td>
+                  <td class="description">{{results.itemListElement[i].result.detailedDescription.articleBody}}</td>
+                </tr>
+
+                <tr>
+                  <td style="text-align: center;">URL </td>
+                  <td >-></td>
+                  <td class="description"><a href="{{results.itemListElement[i].result.detailedDescription.url}}">{{results.itemListElement[i].result.detailedDescription.url}}</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>
