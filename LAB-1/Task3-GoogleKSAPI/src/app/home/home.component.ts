@@ -11,7 +11,7 @@ import { ControlMessagesComponent} from '../control-messages/control-messages.co
 })
 export class HomeComponent implements OnInit {
 
-  public searchResults: any;
+  public results: any;
   searchAPIForm: FormGroup;
 
 
@@ -28,11 +28,9 @@ export class HomeComponent implements OnInit {
   }
 
   getSearchResults(): void {
-    this.http.get('https://kgsearch.googleapis.com/v1/entities:search?query=' + this.searchAPIForm.controls.search.value + '&key=fceebdff8af0e89319ba4a255f7ee452').subscribe(data => {
-      this.searchResults = data;
-      console.log(data);
+    this.http.get('https://kgsearch.googleapis.com/v1/entities:search?query=' + this.searchAPIForm.controls.search.value + '&key=AIzaSyAKgxm1Or1uLqMIAK5P2MXUUA5fj7I9QNY').subscribe(data => {
+      this.results = data;
     });
 
-    // responsiveVoice.speak(this.searchRecipeForm.controls.recipeName.value );
   }
 }
