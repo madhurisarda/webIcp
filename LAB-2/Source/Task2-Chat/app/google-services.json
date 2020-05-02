@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "729970437404",
+    "firebase_url": "https://mobile-5-f0e92.firebaseio.com",
+    "project_id": "mobile-5-f0e92",
+    "storage_bucket": "mobile-5-f0e92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729970437404:android:3b73ea2c33766c34d99ed9",
+        "android_client_info": {
+          "package_name": "in.co.madhur.chatbubblesdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729970437404-d3ch2qd371lvt0lc39rmh3m607mv38q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM-7PVzcSM6DvazMfHv_Cq6tmBQTe1UPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729970437404-d3ch2qd371lvt0lc39rmh3m607mv38q6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
