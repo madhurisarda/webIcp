@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/callRL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/calluserIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pic" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/calluserIV"
+        android:text="Neha"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/lastCallTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTV"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/calluserIV"
+        android:text="5:30 PM"
+        android:textSize="12sp" />
+
+    <!--
+
+    -->
+
+    <ImageButton
+        android:id="@+id/videoCallID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastCallTimeTV"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-38dp"
+        android:layout_marginRight="12dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:src="@drawable/action_videocall" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/chat_view_separator"
+        android:layout_below="@id/calluserIV"
+        android:layout_toRightOf="@id/calluserIV"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

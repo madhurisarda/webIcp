@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Create Group" android:id="@+id/CreateGroup" app:showAsAction="never">
+
+    </item>
+
+    <item android:title="Search Contacts" android:id="@+id/SearchContacts" app:showAsAction="never">
+
+    </item>
+
+    <item android:title="Settings" android:id="@+id/settings" app:showAsAction="never">
+
+    </item>
+
+    <item android:title="Log Out" android:id="@+id/log_out" app:showAsAction="never">
+
+    </item>
+
+</menu>
